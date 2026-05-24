@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FSMF2026 | First Step Metaverse Festival</title>
+  <meta name="description" content="AI時代に、「つながり」と「マーケティング」をもう一度考える。FSMF2026、2年ぶりに小さな対談シリーズとしてゆるく復活。会場はSpatial、参加無料。">
+  
+  <!-- SEO & Open Graph (Optional but good practice) -->
+  <meta property="og:title" content="FSMF2026 | First Step Metaverse Festival">
+  <meta property="og:description" content="AI時代に、「つながり」と「マーケティング」をもう一度考える。Spatialにて無料開催。">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Shippori+Mincho:wght@400;500;700;800&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Decoration Grid -->
+  <div class="bg-grid-overlay"></div>
+  <div class="bg-gradient-glow"></div>
+
+  <!-- Main Container -->
+  <div class="app-container">
+
+    <!-- 1. Hero Section (ファーストビュー) -->
+    <header class="hero-section" id="hero">
+      <div class="hero-grid">
+        
+        <!-- Left Column: Content -->
+        <div class="hero-content-col">
+          <div class="hero-badge">FSMF2026</div>
+          <h1 class="hero-title">
+            <span class="eng-sub">First Step Metaverse Festival 2026</span>
+            <span class="main-concept">AI時代に、「つながり」と<br class="mobile-only">「マーケティング」を<br>もう一度考える。</span>
+          </h1>
+          
+          <p class="hero-lead">
+            FSMF（First Step Metaverse Festival）2026、2年ぶりにゆるく復活します。<br>
+            今回は大きなフェス形式ではなく、1日に1対談ずつ開催する、小さな対談シリーズとして再スタートします。
+          </p>
+
+          <!-- Countdown Timer -->
+          <div class="countdown-container" id="countdown-area">
+            <h3 class="countdown-label">第1弾（イケハヤ氏×坂本崇博氏）開催まで</h3>
+            <div class="timer-grid">
+              <div class="timer-segment">
+                <span class="timer-number" id="days">00</span>
+                <span class="timer-unit">Days</span>
+              </div>
+              <div class="timer-segment">
+                <span class="timer-number" id="hours">00</span>
+                <span class="timer-unit">Hours</span>
+              </div>
+              <div class="timer-segment">
+                <span class="timer-number" id="minutes">00</span>
+                <span class="timer-unit">Mins</span>
+              </div>
+              <div class="timer-segment">
+                <span class="timer-number" id="seconds">00</span>
+                <span class="timer-unit">Secs</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Fast Facts -->
+          <div class="hero-meta">
+            <div class="meta-item">
+              <span class="meta-icon">✦</span>
+              <span class="meta-text"><strong>全体テーマ:</strong> AI、マーケティング、そしてアート</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-icon">✦</span>
+              <span class="meta-text"><strong>会場:</strong> メタバース「Spatial」</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-icon">✦</span>
+              <span class="meta-text"><strong>参加費:</strong> 無料（事前申込制）</span>
+            </div>
+          </div>
+
+          <!-- Primary CTA -->
+          <div class="hero-cta-wrapper">
+            <a href="https://forms.gle/yJGj2DGxp7QK7Wyv9" target="_blank" rel="noopener noreferrer" class="btn-primary" id="cta-hero">
+              <span class="btn-text">FSMF2026 に申し込む</span>
+              <span class="btn-arrow">→</span>
+            </a>
+            <p class="cta-note">※第1弾、第2弾、または両方にお申し込みいただけます。</p>
+          </div>
+        </div>
+
+        <!-- Right Column: Visual -->
+        <div class="hero-visual-col">
+          <div class="main-art-frame">
+            <div class="main-art-glare"></div>
+            <img src="images/2.png" alt="FSMF2026 メインビジュアル" class="main-art-image">
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- 2. Introduction -->
+    <section class="intro-section" id="about">
+      <div class="section-decor-line"></div>
+      <div class="grid-2col">
+        <div class="intro-visual">
+          <div class="visual-mirror-frame">
+            <div class="mirror-surface">
+              <span class="mirror-reflection-text">明鏡</span>
+            </div>
+            <div class="mirror-caption">AI時代の「鏡」としてのつながり</div>
+          </div>
+        </div>
+        <div class="intro-content">
+          <h2 class="section-title">FSMFとは？</h2>
+          <p class="paragraph">
+            FSMF（First Step Metaverse Festival）は、2023年・2024年に開催していた、学際系のメタバース講演会イベントです。メタバース空間に集まり、分野を越えて学び、語り合う場として開催してきました。
+          </p>
+          <p class="paragraph font-featured">
+            そして2026年、FSMFは2年ぶりにゆるく復活します。
+          </p>
+          <p class="paragraph">
+            今回は大きなフェス形式ではありません。1日に1対談ずつ、数回に分けて、ひとつひとつのテーマを深く掘り下げていく「小さな対談シリーズ」として再スタートします。
+          </p>
+          <p class="paragraph">
+            AIによって、文章も画像も動画も、誰でも作れる時代になりました。情報発信やコンテンツ制作のハードルは、これからさらに下がっていきます。
+          </p>
+          <div class="featured-quote">
+            <p class="quote-text">だからこそ、これから問われるのは「何を作るか」「何を売るか」だけではありません。</p>
+            <ul class="quote-bullets">
+              <li>誰とつながるのか。</li>
+              <li>どんな関係性を育てるのか。</li>
+              <li>その場に集まった人たちと、どんな変化を起こしていくのか。</li>
+            </ul>
+          </div>
+          <p class="paragraph">
+            FSMF2026では、メタバースという少し不思議な空間で、AI時代の学び、仕事、マーケティング、そしてアートについて考えていきます。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Highlights -->
+    <section class="highlights-section" id="highlights">
+      <div class="container-narrow">
+        <h2 class="section-title text-center">FSMF2026の3つの見どころ</h2>
+        <div class="highlights-grid">
+          
+          <!-- Highlight Card 1 -->
+          <div class="highlight-card">
+            <div class="card-number">01</div>
+            <h3 class="card-title">深く話す「対談シリーズ」</h3>
+            <p class="card-desc">
+              数十本のイベントを一気に開催するフェス形式ではありません。今回の第1弾・第2弾では、1つのテーマをじっくり掘り下げる対談形式で開催します。短時間で情報を浴びるのではなく、一生モノの「問い」を持ち帰る。そんな静かで深い時間を目指しています。
+            </p>
+          </div>
+
+          <!-- Highlight Card 2 -->
+          <div class="highlight-card">
+            <div class="card-number">02</div>
+            <h3 class="card-title">「明鏡」を手がかりにした探求</h3>
+            <p class="card-desc">
+              ひとつの共通言語としてイケハヤさんのマーケティング教材「明鏡」を手がかりにします。これからの学びや仕事に必要な「つながり」や、顧客との信頼関係の作り方など、売るだけでは届かない時代に、どうすれば選ばれる存在になれるのかを、実務家と研究者の対話から深く掘り下げます。
+            </p>
+          </div>
+
+          <!-- Highlight Card 3 -->
+          <div class="highlight-card">
+            <div class="card-number">03</div>
+            <h3 class="card-title">メタバース空間での「アバター体験」</h3>
+            <p class="card-desc">
+              Zoomウェビナーのような一方通行の動画配信ではありません。アバターで参加し、同じ空間に集まり、対話の気配を感じながら学ぶ場です。初めての方も大歓迎。メタバースに慣れていなくても、まずは一歩入ってみるところから始めてみてください。
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Schedule & Speakers -->
+    <section class="schedule-section" id="schedule">
+      <div class="container-medium">
+        <h2 class="section-title text-center">開催スケジュール・登壇者詳細</h2>
+        
+        <div class="timeline">
+
+          <!-- Event 1 -->
+          <div class="timeline-item">
+            <div class="timeline-date">
+              <span class="date-day">06.10</span>
+              <span class="date-time">19:00 - 20:30</span>
+              <span class="event-badge">第1弾</span>
+            </div>
+            <div class="timeline-content">
+              <h3 class="event-title">
+                これからの学びと仕事に必要な“つながり”とは？
+                <span class="event-subtitle">——明鏡と『 』& WORKPLACEに学ぶコミュニティづくり</span>
+              </h3>
+              <div class="event-banner-wrapper">
+                <img src="images/20260610.png" alt="FSMF2026 第1弾バナー" class="event-banner">
+              </div>
+              <div class="speaker-row">
+                <div class="speaker-profile">
+                  <div class="speaker-avatar-placeholder">IK</div>
+                  <div class="speaker-info">
+                    <span class="speaker-name">イケハヤ さん</span>
+                    <span class="speaker-title">Ninja DAO ファウンダー</span>
+                  </div>
+                </div>
+                <div class="speaker-separator">×</div>
+                <div class="speaker-profile">
+                  <div class="speaker-avatar-placeholder">ST</div>
+                  <div class="speaker-info">
+                    <span class="speaker-name">坂本崇博 さん</span>
+                    <span class="speaker-title">コクヨ株式会社 働き方改革PJアドバイザー</span>
+                  </div>
+                </div>
+              </div>
+              <p class="event-desc">
+                AIによって働き方や学び方が大きく変わる中で、逆に価値が増しているのが「人とのつながり」です。ただの名刺交換ではなく、学び合い、仕事が生まれ、ゆるく続いていく関係性。イケハヤさんのマーケティング教材「明鏡」と、坂本さんが大阪で立ち上げられる『 』& WORKPLACEを手がかりに、これからの学び・仕事・コミュニティづくりについて考えます。
+              </p>
+            </div>
+          </div>
+
+          <!-- Event 2 -->
+          <div class="timeline-item">
+            <div class="timeline-date">
+              <span class="date-day">06.27</span>
+              <span class="date-time">11:00 - 12:30</span>
+              <span class="event-badge">第2弾</span>
+            </div>
+            <div class="timeline-content">
+              <h3 class="event-title">
+                売るだけでは選ばれない時代
+                <span class="event-subtitle">〜AI時代のマーケティング7.0入門</span>
+              </h3>
+              <div class="event-banner-wrapper">
+                <img src="images/20260627.png" alt="FSMF2026 第2弾バナー" class="event-banner">
+              </div>
+              <div class="speaker-row">
+                <div class="speaker-profile">
+                  <div class="speaker-avatar-placeholder">IK</div>
+                  <div class="speaker-info">
+                    <span class="speaker-name">イケハヤ さん</span>
+                    <span class="speaker-title">Ninja DAO ファウンダー</span>
+                  </div>
+                </div>
+                <div class="speaker-separator">×</div>
+                <div class="speaker-profile">
+                  <div class="speaker-avatar-placeholder">TA</div>
+                  <div class="speaker-info">
+                    <span class="speaker-name">田中彰 さん</span>
+                    <span class="speaker-title">大阪産業大学 経営学部教授</span>
+                  </div>
+                </div>
+              </div>
+              <p class="event-desc">
+                AIによって情報発信やコンテンツ制作のハードルは大きく下がりました。誰でも発信できる時代だからこそ、ただ売るだけでは届きにくくなっています。これからのマーケティングでは、コミュニティ、リストマーケティング、顧客との関係づくりがますます重要になります。実務家であるイケハヤさんと、研究者である田中さんの対話を通じて、AI時代のマーケティング7.0を解き明かします。
+              </p>
+            </div>
+          </div>
+
+          <!-- Event 3 (Coming Soon) -->
+          <div class="timeline-item status-pending">
+            <div class="timeline-date">
+              <span class="date-day">07.23</span>
+              <span class="date-time">19:00 -</span>
+              <span class="event-badge badge-pending">第3弾</span>
+            </div>
+            <div class="timeline-content">
+              <h3 class="event-title">
+                現在、最終調整中
+                <span class="event-subtitle">（6月中旬頃に申込開始予定）</span>
+              </h3>
+              <p class="event-desc">
+                FSMF2026では、第1弾・第2弾に続き、第3弾の開催を予定しています。詳細が決まり次第、順次お知らせします。第3弾以降の参加申込は、2026年6月中旬頃の開始を予定しています。
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Guide & FAQ (Interactive Section) -->
+    <section class="guide-faq-section" id="faq">
+      <div class="container-narrow">
+        <h2 class="section-title text-center">参加方法・FAQ</h2>
+        
+        <!-- Spatial Guide (Featured interactive part) -->
+        <div class="spatial-guide-box">
+          <div class="guide-header">
+            <span class="guide-icon">🌐</span>
+            <h3>メタバース「Spatial」かんたん入室ガイド</h3>
+          </div>
+          <div class="guide-accordion-container">
+            
+            <!-- Step 1 -->
+            <div class="accordion-item">
+              <button class="accordion-trigger">
+                <span class="step-num">Step 1</span>
+                <span class="step-title">参加URLを開くだけで入れます</span>
+                <span class="accordion-arrow">▾</span>
+              </button>
+              <div class="accordion-panel">
+                <p>
+                  お申し込み後にメールで届く「イベント会場URL」をクリックするだけで、ブラウザが起動し入室できます。VRゴーグルや特殊な機材は不要です。普段のPCやスマートフォンからアクセス可能です。
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="accordion-item">
+              <button class="accordion-trigger">
+                <span class="step-num">Step 2</span>
+                <span class="step-title">アバターの設定は一瞬で完了</span>
+                <span class="accordion-arrow">▾</span>
+              </button>
+              <div class="accordion-panel">
+                <p>
+                  会場に入ると、仮のアバターと名前の入力欄が表示されます。お好きなニックネームを入力するだけで、すぐにあなたの分身（アバター）が仮想空間に登場します。マイクやカメラの接続設定を求められますが、視聴のみの場合はオフのままで問題ありません。
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="accordion-item">
+              <button class="accordion-trigger">
+                <span class="step-num">Step 3</span>
+                <span class="step-title">キーボードやタップで会場を散策</span>
+                <span class="accordion-arrow">▾</span>
+              </button>
+              <div class="accordion-panel">
+                <p>
+                  PCの場合は「W, A, S, D」キーまたは「矢印」キーで移動し、マウスドラッグで視点を動かせます。スマホの場合は画面上のバーチャルジョイスティックとスワイプで簡単に操作可能です。ステージに近づくと対談の音声が聞こえてきます。
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- FAQs -->
+        <div class="faq-list">
+          
+          <div class="faq-item">
+            <h4 class="faq-question">Q. 参加費はかかりますか？</h4>
+            <p class="faq-answer">A. 完全無料でご参加いただけます。</p>
+          </div>
+
+          <div class="faq-item">
+            <h4 class="faq-question">Q. スマホでも参加できますか？</h4>
+            <p class="faq-answer">A. スマホアプリからも参加可能です。ただし、より安定した描画や快適な空間操作を行いたい場合は、PC（ブラウザ）からのアクセスを強くおすすめいたします。</p>
+          </div>
+
+          <div class="faq-item">
+            <h4 class="faq-question">Q. 途中参加・途中退出はできますか？</h4>
+            <p class="faq-answer">A. はい、ご都合に合わせて自由に入退室いただけます。ただ、リアルタイムの熱量や空気感をお楽しみいただくため、なるべく開始時間からのご参加をおすすめします。</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. Epilogue & Final CTA -->
+    <footer class="footer-cta-section" id="signup">
+      <div class="footer-glow"></div>
+      <div class="container-narrow text-center">
+        <h2 class="epilogue-title">
+          AI時代に、学びと仕事はどう変わるのか。<br>
+          人が集まり続ける場には、何が必要なのか。<br>
+          売るだけでは届かない時代に、どうすれば選ばれる存在になれるのか。
+        </h2>
+        
+        <p class="epilogue-lead">
+          FSMF2026では、こうした問いをメタバース空間で一緒に考えていきます。<br>
+          少しでも気になった方は、ぜひお気軽にお申し込みください。
+        </p>
+
+        <!-- Final CTA Button -->
+        <div class="final-cta-wrapper">
+          <a href="https://forms.gle/yJGj2DGxp7QK7Wyv9" target="_blank" rel="noopener noreferrer" class="btn-primary btn-large" id="cta-footer">
+            <span class="btn-text">FSMF2026 に申し込む</span>
+            <span class="btn-arrow">→</span>
+          </a>
+          <p class="cta-note">Spatial空間で、あなたのアバターとお会いできることを楽しみにしています。</p>
+        </div>
+
+        <!-- Interactive X (Twitter) Share Box -->
+        <div class="share-box">
+          <p class="share-title">💡 FSMF2026の開催を仲間に知らせる</p>
+          <button class="btn-share" id="btn-x-share">
+            <svg class="x-icon" viewBox="0 0 24 24" aria-hidden="true" width="16" height="16">
+              <path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+            </svg>
+            <span>Xでシェアする</span>
+          </button>
+        </div>
+
+        <!-- Simple Bottom Links -->
+        <div class="footer-links">
+          <p class="cooperation">協力: <a href="https://x.com/visit_japan_web/status/2046220617658298814?s=20" target="_blank" rel="noopener noreferrer">visit_japan_web</a></p>
+          <p class="copyright">製作: アースキー | &copy; 2026 First Step Metaverse Festival (FSMF)</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 7. LP Assistant Widget (アースキー) -->
+    <div class="aiph-character-widget" id="aiph-widget">
+      <div class="aiph-speech-bubble" id="aiph-bubble">
+        <span class="aiph-close" id="aiph-close-btn">&times;</span>
+        <p class="aiph-text">
+          こんにちは！LP担当のアースキーです🌍️ メタバース「Spatial」は、アバターが動かせて本当に同じ部屋にいるみたいで面白いですよ！初めての方も大歓迎なので、ぜひ一緒に参加しましょう♪
+        </p>
+      </div>
+      <div class="aiph-avatar" id="aiph-avatar-trigger">
+        <span class="aiph-emoji">🌍️</span>
+        <span class="aiph-pulse"></span>
+      </div>
+    </div>
+
+    <!-- 8. Floating Art Widget (メインビジュアル常時固定＆拡大表示機能) -->
+    <div class="floating-art-widget" id="floating-art-widget">
+      <div class="floating-art-overlay" id="floating-art-overlay"></div>
+      <div class="floating-art-frame" id="floating-art-frame">
+        <span class="floating-art-close-btn" id="floating-art-close-btn">&times;</span>
+        <img src="images/2.png" alt="FSMF2026 メインビジュアル" class="floating-art-img">
+      </div>
+      <div class="floating-art-trigger" id="floating-art-trigger" title="メインビジュアルを鑑賞する">
+        <span class="floating-art-icon">🖼️</span>
+        <span class="floating-art-pulse"></span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
