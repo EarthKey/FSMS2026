@@ -165,7 +165,7 @@ body {
 .announcement-bar {
   background: linear-gradient(90deg, #121021 0%, #4D1910 50%, #121021 100%);
   border-bottom: 1px solid var(--border-color);
-  padding: 10px 24px;
+  height: 44px; /* 高さを44pxに固定 */
   text-align: center;
   position: relative;
   z-index: 100;
@@ -173,7 +173,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 12px;
-  flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .announcement-badge {
@@ -185,13 +185,33 @@ body {
   padding: 2px 8px;
   border-radius: 4px;
   letter-spacing: 0.05em;
+  flex-shrink: 0;
+}
+
+/* Slides Carousel wrapper */
+.announcement-slides-wrapper {
+  height: 24px;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 0;
+}
+
+.announcement-slides {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.8s cubic-bezier(0.76, 0, 0.24, 1); /* スムーズなイージングで縦スライド */
 }
 
 .announcement-text {
+  height: 24px;
+  line-height: 24px;
   font-size: 0.8rem;
   color: var(--text-primary);
   letter-spacing: 0.03em;
   font-weight: 500;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
 }
 
 /* --- Global Header Navigation (ナビゲーション) --- */

@@ -176,4 +176,24 @@ document.addEventListener('DOMContentLoaded', () => {
     if (floatingArtFrame) floatingArtFrame.addEventListener('click', zoomOut);
   }
 
+
+  /* ==========================================================================
+     6. Announcement Bar Carousel (Vertical slide every 5 seconds)
+     ========================================================================== */
+  const announcementSlides = document.getElementById('announcement-slides');
+
+  if (announcementSlides) {
+    const slides = announcementSlides.children;
+    const slideCount = slides.length;
+    let currentSlideIndex = 0;
+
+    if (slideCount > 1) {
+      setInterval(() => {
+        currentSlideIndex = (currentSlideIndex + 1) % slideCount;
+        // Shift slides vertically by 24px per slide
+        announcementSlides.style.transform = `translateY(${-24 * currentSlideIndex}px)`;
+      }, 5000);
+    }
+  }
+
 });
