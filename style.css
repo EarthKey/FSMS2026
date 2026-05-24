@@ -235,6 +235,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
 }
 
 .nav-logo {
@@ -244,6 +245,7 @@ body {
   letter-spacing: 0.05em;
   color: var(--text-primary);
   user-select: none;
+  flex-shrink: 0;
 }
 
 .nav-logo .logo-serif {
@@ -255,10 +257,59 @@ body {
   color: var(--text-secondary);
 }
 
+/* 中央の独立したCTAボタン（常時表示） */
+.nav-cta-center-wrapper {
+  flex-grow: 0;
+  text-align: center;
+  z-index: 1002;
+}
+
+.btn-nav-cta-center {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid var(--accent-gold);
+  background: var(--accent-gold);
+  color: var(--bg-primary);
+  text-decoration: none;
+  font-weight: 700;
+  padding: 10px 24px;
+  border-radius: 24px;
+  font-size: 0.85rem;
+  box-shadow: 0 4px 15px rgba(var(--accent-gold-rgb), 0.25);
+  transition: var(--transition-smooth);
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.btn-nav-cta-center:hover {
+  background-color: var(--text-primary);
+  border-color: var(--text-primary);
+  color: var(--bg-primary);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.15);
+  transform: translateY(-1.5px);
+}
+
+.cta-text-pc {
+  display: inline;
+}
+
+.cta-text-mobile {
+  display: none;
+}
+
+/* 右側ブロック */
+.nav-right-block {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-shrink: 0;
+}
+
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 30px; /* 項目が増えたため40pxから30pxに微調整 */
+  gap: 24px; /* 3カラム化したため30pxから24pxにしてPCでの余裕を確保 */
   align-items: center;
 }
 
@@ -305,27 +356,6 @@ body {
   border-radius: 2px;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   transform-origin: left center;
-}
-
-.btn-nav-cta {
-  display: inline-flex;
-  align-items: center;
-  border: 1.5px solid var(--border-color-glow);
-  background: rgba(var(--accent-gold-rgb), 0.02);
-  color: var(--accent-gold);
-  text-decoration: none;
-  font-weight: 600;
-  padding: 10px 24px;
-  border-radius: 24px;
-  font-size: 0.85rem;
-  transition: var(--transition-smooth);
-}
-
-.btn-nav-cta:hover {
-  background-color: var(--accent-gold);
-  color: var(--bg-primary);
-  box-shadow: 0 4px 15px rgba(var(--accent-gold-rgb), 0.25);
-  transform: translateY(-1.5px);
 }
 
 /* ==========================================================================
@@ -1463,9 +1493,30 @@ body {
    Responsive Adaptations
    ========================================================================== */
 @media (max-width: 992px) {
-  /* PC用CTAボタンは非表示 */
+  /* 旧CTAボタン用定義の削除 */
   .btn-nav-cta {
     display: none;
+  }
+
+  /* 中央の常時表示CTAボタンをスマホ用に最適化 */
+  .cta-text-pc {
+    display: none !important;
+  }
+
+  .cta-text-mobile {
+    display: inline !important;
+  }
+
+  .btn-nav-cta-center {
+    font-size: 0.8rem;
+    padding: 8px 16px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(var(--accent-gold-rgb), 0.2);
+  }
+
+  /* ロゴサイズをスマホ幅に最適化 */
+  .nav-logo {
+    font-size: 1.15rem;
   }
 
   /* ハンバーガートグルボタンを表示 */
@@ -1575,8 +1626,9 @@ body {
   }
 
   .global-nav { 
-    padding: 16px 24px; 
+    padding: 16px 20px; /* 横余白を少し縮めて極小幅での崩れを防止 */
     height: 74px; /* 高さを固定してヘッダー位置を正確に保つ */
+    gap: 10px; /* 要素間の隙間を小さく */
   }
 
   .hero-grid { grid-template-columns: 1fr; gap: 48px; text-align: center; }
