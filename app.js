@@ -196,4 +196,55 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+
+  /* ==========================================================================
+     7. Mobile Responsive Hamburger Menu Toggle
+     ========================================================================== */
+  const navToggleBtn = document.getElementById('nav-toggle-btn');
+  const navLinksMenu = document.getElementById('nav-links-menu');
+  const navLinks = navLinksMenu ? navLinksMenu.querySelectorAll('a') : [];
+
+  if (navToggleBtn && navLinksMenu) {
+    const toggleMenu = () => {
+      const isExpanded = navToggleBtn.getAttribute('aria-expanded') === 'true';
+      navToggleBtn.setAttribute('aria-expanded', !isExpanded);
+      navToggleBtn.classList.toggle('active');
+      navLinksMenu.classList.toggle('active');
+      
+      if (!isExpanded) {
+        document.body.style.overflow = 'hidden'; // メニュー展開時に背景スクロールを防止
+      } else {
+        document.body.style.overflow = '';
+      }
+    };
+
+    const closeMenu = () => {
+      navToggleBtn.setAttribute('aria-expanded', 'false');
+      navToggleBtn.classList.remove('active');
+      navLinksMenu.classList.remove('active');
+      document.body.style.overflow = '';
+    };
+
+    // Toggle menu on button click
+    navToggleBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleMenu();
+    });
+
+    // Close menu when clicking any link inside the menu
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        closeMenu();
+      });
+    });
+
+    // Close menu when clicking outside of the header navigation
+    document.addEventListener('click', (e) => {
+      const header = document.querySelector('.global-header');
+      if (header && !header.contains(e.target) && navLinksMenu.classList.contains('active')) {
+        closeMenu();
+      }
+    });
+  }
+
 });
