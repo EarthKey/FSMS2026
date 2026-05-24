@@ -197,14 +197,21 @@ body {
 /* --- Global Header Navigation (ナビゲーション) --- */
 .global-header {
   width: 100%;
-  position: relative;
-  z-index: 99;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: var(--bg-glass);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1.5px solid var(--border-color);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  transition: var(--transition-smooth);
 }
 
 .global-nav {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 24px;
+  padding: 16px 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
