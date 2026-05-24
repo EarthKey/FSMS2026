@@ -161,6 +161,114 @@ body {
   font-weight: 500;
 }
 
+/* --- Announcement Bar (アナウンスバー) --- */
+.announcement-bar {
+  background: linear-gradient(90deg, #121021 0%, #4D1910 50%, #121021 100%);
+  border-bottom: 1px solid var(--border-color);
+  padding: 10px 24px;
+  text-align: center;
+  position: relative;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.announcement-badge {
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--bg-primary);
+  background: var(--accent-gold);
+  padding: 2px 8px;
+  border-radius: 4px;
+  letter-spacing: 0.05em;
+}
+
+.announcement-text {
+  font-size: 0.8rem;
+  color: var(--text-primary);
+  letter-spacing: 0.03em;
+  font-weight: 500;
+}
+
+/* --- Global Header Navigation (ナビゲーション) --- */
+.global-header {
+  width: 100%;
+  position: relative;
+  z-index: 99;
+}
+
+.global-nav {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-family: var(--font-serif-en);
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+  color: var(--text-primary);
+  user-select: none;
+}
+
+.nav-logo .logo-serif {
+  color: var(--accent-gold);
+}
+
+.nav-logo .logo-num {
+  font-weight: 300;
+  color: var(--text-secondary);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.nav-links a {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition: var(--transition-fast);
+}
+
+.nav-links a:hover {
+  color: var(--accent-gold);
+}
+
+.btn-nav-cta {
+  display: inline-flex;
+  align-items: center;
+  border: 1.5px solid var(--border-color-glow);
+  background: rgba(var(--accent-gold-rgb), 0.02);
+  color: var(--accent-gold);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 24px;
+  border-radius: 24px;
+  font-size: 0.85rem;
+  transition: var(--transition-smooth);
+}
+
+.btn-nav-cta:hover {
+  background-color: var(--accent-gold);
+  color: var(--bg-primary);
+  box-shadow: 0 4px 15px rgba(var(--accent-gold-rgb), 0.25);
+  transform: translateY(-1.5px);
+}
+
 /* ==========================================================================
    1. Hero Section (ファーストビュー)
    ========================================================================== */
@@ -430,6 +538,23 @@ body {
   font-size: 0.8rem;
   color: var(--text-muted);
   margin-top: 10px;
+}
+
+/* --- Hero CTA Microcopies --- */
+.hero-microcopies {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-microcopies .micro-item {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  display: inline-flex;
+  align-items: center;
 }
 
 /* ==========================================================================
@@ -1279,6 +1404,10 @@ body {
    Responsive Adaptations
    ========================================================================== */
 @media (max-width: 992px) {
+  .nav-links { display: none; }
+  .global-nav { padding: 16px 24px; }
+  .btn-nav-cta { padding: 8px 18px; font-size: 0.75rem; }
+
   .hero-grid { grid-template-columns: 1fr; gap: 48px; text-align: center; }
   .hero-content-col { text-align: center; }
   .hero-title { font-size: 3rem; }
