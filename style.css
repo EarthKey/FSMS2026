@@ -966,6 +966,33 @@ body {
   color: var(--accent-gold);
 }
 
+/* --- Guide Footer Link --- */
+.guide-footer-link {
+  margin-top: 2rem;
+  border-top: 1px dashed var(--border-color);
+  padding-top: 1.5rem;
+  text-align: center;
+}
+
+.guide-footer-link p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.guide-footer-link a {
+  color: var(--accent-gold);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--accent-gold);
+  transition: var(--transition-fast);
+  font-weight: 500;
+}
+
+.guide-footer-link a:hover {
+  color: var(--text-primary);
+  border-bottom-style: solid;
+}
+
 /* --- FAQ List --- */
 .faq-list {
   display: flex;
