@@ -52,6 +52,17 @@ body {
   overflow-x: hidden;
   position: relative;
   min-height: 100vh;
+  /* 夜明けの物語を表現する縦長サンライズグラデーション */
+  background: linear-gradient(
+    180deg, 
+    #080A0F 0%,     /* 最上部：まだ薄暗い夜空のミッドナイト */
+    #121121 25%,    /* 朝焼け前：宵のバイオレット */
+    #241528 50%,    /* 中間：徐々に白むマゼンタパープル */
+    #4A1D1A 75%,    /* 下部：地平線の熱を帯びるダークレッド */
+    #813016 100%    /* 最下部：昇る太陽のアンビエントオレンジ */
+  );
+  background-attachment: scroll;
+  background-size: 100% 100%;
 }
 
 /* --- Decorative Backgrounds --- */
@@ -1043,15 +1054,16 @@ body {
   bottom: -20%;
   left: 50%;
   transform: translateX(-50%);
-  width: 70%;
-  height: 50%;
+  width: 80%;
+  height: 60%;
   z-index: -1;
   background: radial-gradient(
     circle, 
-    rgba(var(--accent-gold-rgb), 0.05) 0%, 
+    rgba(230, 92, 26, 0.22) 0%,     /* 燃えるような太陽のオレンジ */
+    rgba(226, 182, 92, 0.12) 40%,   /* 朝日の眩しいゴールド */
     transparent 70%
   );
-  filter: blur(60px);
+  filter: blur(80px);
   pointer-events: none;
 }
 
