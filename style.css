@@ -1051,6 +1051,54 @@ body {
   line-height: 1.75;
 }
 
+/* --- Event Overview Box (開催概要) --- */
+.event-overview-box {
+  background: var(--bg-secondary);
+  border-left: 2px solid var(--accent-gold);
+  padding: 24px 30px;
+  margin: 1.5rem 0;
+  border-radius: 0 12px 12px 0;
+}
+
+.event-overview-title {
+  font-family: var(--font-serif-ja);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--accent-gold);
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.event-overview-list {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.event-overview-list li {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.85;
+}
+
+.event-overview-list strong {
+  color: var(--text-primary);
+  font-weight: 600;
+  margin-right: 0.3em;
+}
+
+.event-overview-list a {
+  color: var(--accent-gold);
+  text-decoration: underline;
+}
+
+.event-overview-cta {
+  padding: 14px 32px;
+}
+
+.event-overview-cta .btn-text {
+  font-size: 0.95rem;
+}
+
 /* --- Pending State --- */
 .status-pending .timeline-date::after {
   background-color: var(--bg-primary);

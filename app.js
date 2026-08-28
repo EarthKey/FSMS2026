@@ -6,9 +6,9 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   /* ==========================================================================
-     1. Countdown Timer (Target: 2026-07-23T19:00:00 JST)
+     1. Countdown Timer (Target: 2026-09-05T11:00:00 JST)
      ========================================================================== */
-  const targetDate = new Date('2026-07-23T19:00:00+09:00').getTime();
+  const targetDate = new Date('2026-09-05T11:00:00+09:00').getTime();
 
   const updateCountdown = () => {
     const now = new Date().getTime();
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Update label dynamically
       const label = countdownArea.querySelector('.countdown-label');
       if (label) {
-        label.textContent = '✨ 第3弾は終了、または開催中です！';
+        label.textContent = '✨ 第4弾は終了、または開催中です！';
         label.style.color = 'var(--accent-teal)';
       }
       return;
