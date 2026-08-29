@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `FSMF2026（First Step Metaverse Festival）が2年ぶりにゆるく復活！\n\n` +
         `第1弾：6/10 イケハヤさん×坂本崇博さん\n` +
         `第2弾：6/27 イケハヤさん×田中彰さん\n\n` +
-        `メタバース「Spatial」で無料開催。AI時代の学びと仕事の「つながり」をもう一度考える小さな対談シリーズです。\n` +
+        `メタバース「cluster」で無料開催。AI時代の学びと仕事の「つながり」をもう一度考える小さな対談シリーズです。\n` +
         `#FSMF2026 @ihayato`;
 
       const shareUrl = 'https://forms.gle/yJGj2DGxp7QK7Wyv9';
